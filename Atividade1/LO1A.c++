@@ -5,7 +5,8 @@
 int main(void) {
   //Deixa acentuação no C++:
   setlocale(LC_ALL, "Portuguese");
-  /*Se nn funcionar: 
+
+  /*☝🏼 Se nn funcionar: 
   1- Windows + R -> Digite "intl.cpl";
   2- Vá na aba "Administrativo" e clique no botão Alterar localidade do sistema;
   3- Ativar Beta: Use Unicode UTF-8 para suporte a idiomas em todo o mundo;
