@@ -3,7 +3,7 @@
 
 int main() {
    //Pra executar é só apertar a tecla f6 :D
-   char name[] = "Thiago";
+   char name[] = "EDU";
    
    printf("Olá mundo, meu nome é %s!\n", name);
 }

@@ -7,5 +7,5 @@ int main() {
     double resul;
     
     resul = pi * 10;
-    printf("O resultado é %.02f \n", resul);
+    printf("O resultado E %.02f \n", resul);
 }
