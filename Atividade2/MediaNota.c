@@ -12,7 +12,7 @@ int main(void) {
   
   media = (nota1 + nota2) / 2;
   
-  printf("Media do aluno = %.2f\n",media);
+  printf("Média do aluno = %.2f\n",media);
   
   //Pausa da tela (somente para Windows):
   system("pause");

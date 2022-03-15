@@ -15,8 +15,8 @@ int main(void) {
 
   // Saída de dados
   system("cls"); // Comando Windows; caso seja Linux, utilize "clear";
-  printf("Velocidade media = %.2f Km/h \n", velocidade);
+  printf("Velocidade média = %.2f Km/h \n", velocidade);
   printf("Tempo gasto = %.0fh \n", tempo);
-  printf("Distancia = %.2f Km \n", distancia);
+  printf("Distância = %.2f Km \n", distancia);
   printf("Litros usados = %.2f litros \n", litrosUsados);
 }
