@@ -6,7 +6,7 @@
 int main() {
     float diam, peri, raio, area;
 
-    printf("Digite o perímetro deste Triângulo: ");
+    printf("Digite o perímetro deste círculo: ");
     scanf("%f",&peri);
 
     diam = peri / pi;
@@ -15,5 +15,5 @@ int main() {
     //Area é raio² * pi:
     area = (raio * raio) * pi;
 
-    printf("A área deste triângulo é %.02f \n", area);
+    printf("A área deste círculo é %.02f \n", area);
 }
