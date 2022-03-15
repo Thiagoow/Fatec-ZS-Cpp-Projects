@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+//Var global:
 #define gravidade 9.8;
 
 int main() {
