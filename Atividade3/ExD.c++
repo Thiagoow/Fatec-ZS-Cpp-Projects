@@ -16,4 +16,6 @@ int main() {
     area = (raio * raio) * pi;
 
     printf("A área deste círculo é %.02f \n", area);
+    printf("\nDiâmetro: %.02f \n", diam);
+    printf("Raio: %.02f", raio);
 }
