@@ -13,7 +13,7 @@ int main(){
 
     dist = time * soundVel;
 
-    cout << "O distância do ráio é de " << dist << " metros" << endl;
+    cout << "O distância do raio é de " << dist << " metros" << endl;
 
     return 0;
 }

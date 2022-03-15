@@ -3,17 +3,16 @@
 #include <iostream>
 const double pi = 3.14;
 /*☝🏼 Msm coisa que o comando: 
-define pi 3.14
-*/
+define pi 3.14 */
 
 using namespace std;
 
 int main () {
     double base, altura, area;
 
-    printf("----Cálculo da Área do Triângulo--- \n");
+    printf("---Cálculo da Área do Triângulo--- \n");
 
-    //Out/Sáida (printf):
+    //Out/Saída (printf):
     cout << "Digite o valor da base: ";
     //In/Entrada (scanf):
     cin >> base;

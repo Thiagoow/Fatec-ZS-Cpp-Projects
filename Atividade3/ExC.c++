@@ -7,11 +7,11 @@
 int main() {
     float alt, tempoQueda;
 
-    printf("----Tempo de Queda de um Corpo--- \n");
+    printf("---Tempo de Queda de um Corpo--- \n");
     printf("Digite a altura da queda em metros: ");
     scanf("%f",&alt);
 
     tempoQueda = sqrt(2 * alt) / gravidade;
 
-    printf("O tempo de queda dessa corpo é: %.02fs \n", tempoQueda);
+    printf("O tempo de queda desse corpo é: %.02fs \n", tempoQueda);
 }
