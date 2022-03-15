@@ -5,7 +5,7 @@
 
 int main() {
  //Deixa acentuação no C++:
-  setlocale(LC_ALL, "Portuguese");
+ //setlocale(LC_ALL, "Portuguese");
 
   /*☝🏼 Se nn funcionar: 
   1- Windows + R -> Digite "intl.cpl";
