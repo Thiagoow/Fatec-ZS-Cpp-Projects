@@ -3,7 +3,7 @@
 #include "cstdlib"
 
 using namespace std;
-int v1, v2;
+double v1, v2;
 
 int main() {
   Repetir:
@@ -22,10 +22,12 @@ int main() {
       cout << "\nOs valores " << v1 << " e " << v2 << " são != \n";
 
       if(v1 > v2){
-        cout << "O maior valor é " << v1 << " e o menor valor é " << v2 << ". \n\n";
+        cout << "O > valor é o 1 | O < valor é o 2" << endl;
+        cout << "v1 - v2 = " << v1-v2 << endl << endl;
       }
       else{
-        cout << "O maior valor é " << v2 << " e o menor valor é " << v1 << ". \n\n";
+        cout << "O > valor é o 2 | O < valor é o 1" << endl;
+        cout << "v2 - v1 = " << v2-v1 << endl << endl;
       }
     }
     system("pause");
