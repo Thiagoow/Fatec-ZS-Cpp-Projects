@@ -29,8 +29,6 @@ int main() {
     }
 
     cout << status << endl << endl;
-
-    //"Digite qualquer tecla para continuar":
     system("pause");
 
   goto Repetir;
