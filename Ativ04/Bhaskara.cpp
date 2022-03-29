@@ -10,7 +10,7 @@ int main() {
     system("cls");
 
     cout << "---Cálculo Raiz 2º Grau---";
-    cout << "\n     Ax² +Bx -Cx = 0\n\n";
+    cout << "\n     Ax² +Bx -C = 0\n\n";
 
     cout << "digite também o sinal do coeficiente, se \nestiver em fração, converta para decimal❗ \n\n";
     cout << "A = "; cin >> a;
