@@ -1,9 +1,8 @@
-#include "iostream"
-#include "math.h"
-#include "cstdlib"
-const double pi = 3.14;
-
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
 using namespace std;
+
 double areaTri, areaQuad, areaPent, sides;
 double l1, l2, l3, l4, l5, heronP; 
 
@@ -11,18 +10,16 @@ int main() {
   Repetir:
     system("cls");
 
-    //tri, quadrado, pent
-    cout << "---Área de Poligóno---" << endl;
-    cout << "Digite a quantidade de lados:" << endl;
-    cin >> sides;
+    cout << "---Área do Polígono---" << endl;
+    cout << "Digite a quantidade de lados: "; cin >> sides;
 
     if (sides < 3) {
       cout << "Não é um polígono❗" << endl << endl;
-      return 0;
+      //return 0;
     }
     else if (sides > 5) {
       cout << "Polígono não identificado❗" << endl << endl;
-      return 0;
+      //return 0;
     }
     else if (sides == 3) {
       cout << "\nDigite os valores dos lados separadas por enter:" << endl;
@@ -37,20 +34,20 @@ int main() {
       cout << endl << "A área desse 🔺 é " << areaTri << endl;
     } 
     else if (sides == 4) {
-      cout << "\nDigite o valor de todos os lados:" << endl;
+      cout << "\nDigite o valor dos lados: " << endl;
       cout << "Valor dos lados: "; cin >> sides;
       
       areaQuad = pow(sides, 2);
-      cout << endl << "A área desse ⬛ é " << areaTri << endl;
+      cout << endl << "A área desse 🟥 é " << areaTri << endl;
     } 
     else {
-      cout << "\nDigite o valor de todos os lados:" << endl;
+      cout << "\nDigite o valor dos lados:" << endl;
       cin >> sides;
       cout << "\nDigite o valor da apótema desse pentágono:" << endl;
       cin >> l1;
       
       areaPent = sides * l1;
-      cout << endl << "A área desse pentágono é " << areaTri << endl;
+      cout << endl << "A área desse pentágono é " << areaPent << endl;
     }
 
     system("pause");
