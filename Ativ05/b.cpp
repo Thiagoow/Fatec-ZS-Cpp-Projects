@@ -1,19 +1,19 @@
 #include <iostream>
-using namespace std; //23 32 96 -> 96 23
+using namespace std;
 
-int main() {
+int main () {
 const int arraySize = 3;
 int abc[arraySize];
 int minimum, maximum;
 
   Repetir:
     system("cls");
-    cout << "--Digite " << arraySize << " valores--\n"; 
+    cout << "--Enter " << arraySize << " values--\n" << endl;
     
     for (int i = 0; i < arraySize; i++) {
-      cout << "Digite o valor: "; cin >> abc[i]; 
+      cout << "Enter value: "; cin >> abc[i];
     }
-    
+
     minimum = abc[0];
     maximum = abc[0];
 
@@ -22,12 +22,12 @@ int minimum, maximum;
         minimum = abc[i];
       }
       else if (maximum < abc[i]) {
-        maximum < abc[i];
+        maximum = abc[i];
       }
-	  }
-    
-    cout << "\nO maior número é: " << maximum << endl;
-    cout << "O menor número é: " << minimum << endl << endl;
+    }
+
+    cout <<"\nMaximum number is: "<< maximum << endl;
+    cout <<"Minimum number is: "<< minimum << endl;
 
     system("pause");
 
