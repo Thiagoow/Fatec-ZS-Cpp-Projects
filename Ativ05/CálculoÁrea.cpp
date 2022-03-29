@@ -30,7 +30,6 @@ int main() {
       cout << "Lado 2: "; cin >> l2;
       cout << "Lado 3: "; cin >> l3;
       
-
       heronP = (l1 + l2 + l3) / 2;
       areaTri = heronP * ((heronP - l1) * (heronP - l2) * (heronP - l3));
       areaTri = sqrt(areaTri);
