@@ -1,10 +1,10 @@
 #include <iostream>
-using namespace std; //23 32 96 -> 96 23
+using namespace std;
 
 int main() {
 const int arraySize = 3;
-double abc[arraySize];
-double minimum, maximum;
+double abc[arraySize], minimum, maximum;
+string repeat;
 
   Repetir:
     system("cls");
@@ -28,8 +28,11 @@ double minimum, maximum;
     
     cout << "\nO maior número é: " << maximum << endl;
     cout << "O menor número é: " << minimum << endl << endl;
-
-    system("pause");
+    
+    cout << "Para não repetir o algoritmo, digite 'N', ou 'n': "; cin >> repeat;
+    if (repeat == "N" || repeat == "n") {
+      return 0;
+    }
 
   goto Repetir;
 
