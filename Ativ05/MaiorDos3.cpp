@@ -3,8 +3,8 @@ using namespace std; //23 32 96 -> 96 23
 
 int main() {
 const int arraySize = 3;
-int abc[arraySize];
-int minimum, maximum;
+double abc[arraySize];
+double minimum, maximum;
 
   Repetir:
     system("cls");
@@ -22,7 +22,7 @@ int minimum, maximum;
         minimum = abc[i];
       }
       else if (maximum < abc[i]) {
-        maximum < abc[i];
+        maximum = abc[i];
       }
 	  }
     
