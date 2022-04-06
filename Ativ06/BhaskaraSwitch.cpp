@@ -3,7 +3,7 @@
 #include "math.h"
 
 using namespace std;
-double a, b, c, raiz1, raiz2, delta;
+int a, b, c, raiz1, raiz2, delta;
 
 int main() {
 Repetir:
@@ -24,17 +24,31 @@ Repetir:
    // pow -> base(num, expoente):
    delta = pow(b, 2) - (4 * a * c);
 
-   if (delta >= 0 && a != 0) {
-      //☝🏼 Não existe raiz de num < 0 no conjunto dos nums reais
-      raiz1 = (-b + sqrt(delta)) / (2 * a);
-      raiz2 = (-b - sqrt(delta)) / (2 * a);
+   switch (delta) {
+      case 0:
+         cout << "\nA equação nao possui raízes reais!";
+         cout << "\nPois delta é < 0 🤔" << endl;
+         break;
 
-      cout << "\nx = {" << raiz1 << ", ";
-      cout << raiz2 << "} \n";
-      cout << "Delta: " << delta << "\n\n";
-   } else {
-      cout << "\nA equação nao possui raízes reais!";
-      cout << "\nOu A = 0, ou delta é < 0 🤔" << endl;
+      default:
+         switch (a) {
+            /*👇🏽 case < 0 (this doesn't work in pure c++,
+            it is working here because of GCC extension): */
+            case 0 ... 0:
+               cout << "\nA equação nao possui raízes reais!";
+               cout << "\nPois A = 0" << endl;
+               break;
+
+            default:
+               raiz1 = (-b + sqrt(delta)) / (2 * a);
+               raiz2 = (-b - sqrt(delta)) / (2 * a);
+
+               cout << "\nx = {" << raiz1 << ", ";
+               cout << raiz2 << "} \n";
+               cout << "Delta: " << delta << "\n\n";
+               break;
+         }
+         break;
    }
 
    system("pause");
