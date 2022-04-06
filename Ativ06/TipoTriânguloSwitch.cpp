@@ -1,9 +1,10 @@
+#include <math.h>
 #include <iostream>
 using namespace std;
 
 const int arraySize = 3;
-double abc[arraySize] = {};
-double a, b, c, sumA, sumB, sumC;
+int abc[arraySize] = {};
+int a, b, c, sumA, sumB, sumC, tri;
 
 int main() {
 Repetir:
@@ -22,18 +23,29 @@ Repetir:
    sumB = (a + c);
    sumC = (b + a);
 
-   if (a >= sumA || b >= sumB || c >= sumC) {
-      cout << "\nEssa figura não é um 🔺 😑" << endl;
-   } else {
-      if (a == b && a == c) {
-         cout << "\nEste 🔺 é EQUILÁTERO (==)" << endl;
-      } else if (a == b || a == c || b == c) {
-         cout << "\nEste 🔺 é ISÓSCELES 2(==)" << endl;
-      } else {
-         cout << "\nEste 🔺 é ESCALENO !=" << endl;
-      }
-   }
+   switch (a >= sumA || b >= sumB || c >= sumC) {
+      case true:
+         cout << "\nEssa figura não é um 🔺 😑" << endl;
+         break;
 
+      default:
+         tri = (a / b) + (a / c) + (b / c);
+         cout << tri << endl;
+
+         switch (tri) {
+            case 3:
+               cout << "\nEste 🔺 é EQUILÁTERO (==)" << endl;
+               break;
+
+            case 2:
+               cout << "\nEste 🔺 é ISÓSCELES 2(==)" << endl;
+               break;
+
+            case 1:
+               cout << "\nEste 🔺 é ESCALENO !=" << endl;
+               break;
+         }
+   }
    system("pause");
 
    goto Repetir;
