@@ -4,7 +4,7 @@ using namespace std;
 
 const int arraySize = 3;
 int abc[arraySize] = {};
-int a, b, c, sumA, sumB, sumC, tri;
+int a, b, c, sumA, sumB, sumC, tri, semiP;
 
 int main() {
 Repetir:
@@ -29,6 +29,8 @@ Repetir:
          break;
 
       default:
+         semiP = (a + b + c) / 2;
+
          if (a == b && a == c) {
             cout << "\nEste 🔺 é EQUILÁTERO (==)" << endl;
          } else if (a == b || a == c || b == c) {
@@ -36,6 +38,7 @@ Repetir:
          } else {
             cout << "\nEste 🔺 é ESCALENO !=" << endl;
          }
+         cout << "Semiperímetro = " << semiP << endl << endl;
    }
    system("pause");
 
