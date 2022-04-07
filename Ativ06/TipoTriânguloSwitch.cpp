@@ -29,21 +29,12 @@ Repetir:
          break;
 
       default:
-         tri = (a / b) + (a / c) + (b / c);
-         cout << tri << endl;
-
-         switch (tri) {
-            case 3:
-               cout << "\nEste 🔺 é EQUILÁTERO (==)" << endl;
-               break;
-
-            case 2:
-               cout << "\nEste 🔺 é ISÓSCELES 2(==)" << endl;
-               break;
-
-            case 1:
-               cout << "\nEste 🔺 é ESCALENO !=" << endl;
-               break;
+         if (a == b && a == c) {
+            cout << "\nEste 🔺 é EQUILÁTERO (==)" << endl;
+         } else if (a == b || a == c || b == c) {
+            cout << "\nEste 🔺 é ISÓSCELES 2(==)" << endl;
+         } else {
+            cout << "\nEste 🔺 é ESCALENO !=" << endl;
          }
    }
    system("pause");
