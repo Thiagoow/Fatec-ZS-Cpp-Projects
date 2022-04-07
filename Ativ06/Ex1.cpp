@@ -9,20 +9,20 @@ int main() {
    int itemMenu;
 
 Menu:
-   system("clear");
-   cout << "In1 Executar";
-   cout << "In2 Finalizarinitem:";
+   system("cls");
+   cout << "1 Executar\n";
+   cout << "0 Finalizar\nDigite uma das opções: ";
    cin >> itemMenu;
 
    switch (itemMenu) {
       case 1:
-         system("clear");
-         cout << "nDigite A, B, C:";
+         system("cls");
+         cout << "Digite A, B, C:\n";
          cin >> a >> b >> c;
 
          if (a > b + c || b > a + c || c > a + b) {
-            cout << "InLados Inválidos!" << endl;
-            system("sleep 5");
+            cout << "\nLados Inválidos!" << endl;
+            system("pause");
             goto Menu;
          }
 
@@ -34,17 +34,17 @@ Menu:
             tipo = "Escaleno!";
          else
             tipo = "Isósceles!";
-         cout << "InSemiperímetro:" << sp;
-         cout << "InTipo:" << tipo << endl;
+         cout << "\nSemiperímetro: " << sp;
+         cout << "\nTipo: " << tipo << endl << endl;
          break;
 
-      case 2:
+      case 0:
          exit(0);
          break;
       default:
          cout << "\nErro!" << endl;
          break;
    }
-   system("sleep 5");
+   system("pause");
    goto Menu;
 }
