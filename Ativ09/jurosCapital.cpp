@@ -13,8 +13,7 @@ int readVars() {
    cin >> fund;
    cout << "Digite o período (EM ANOS): ";
    cin >> period;
-   period = period * 12;
-
+   period = period * 12;  //<- Convert to months:
    return period;
 }
 int calcInterests() {
