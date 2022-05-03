@@ -42,15 +42,20 @@ Menu:
 
    switch (menuOp) {
       case 1:
-
+         cout << endl;
+         readVars();
+         cout << endl;
          break;
 
       case 2:
-
+         calcInterests();
+         calcFund();
+         cout << "\nCalculado! :D" << endl;
          break;
 
       case 3:
-
+         cout << "\nTeu capital é: R$" << fund << ", seu montante é: R$"
+              << amount << " e os juros são R$" << interests << endl;
          break;
 
       case 4:
