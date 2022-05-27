@@ -20,7 +20,7 @@ int main() {
    return 0;
 }
 
-// Subroutine function:
+// Subroutine:
 int calcSum(int i, int end) {
    int sum = 0;
    cout << "\nSendo os números:\n";
@@ -32,5 +32,4 @@ int calcSum(int i, int end) {
       i++;
    }
    res = sum;
-   // return sum;
 }
