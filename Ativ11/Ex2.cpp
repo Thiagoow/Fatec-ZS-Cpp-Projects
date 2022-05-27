@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int calcSum(int i, int end);
+int calcSum(int i, int end), res;
 
 // Main function:
 int main() {
@@ -13,9 +13,9 @@ int main() {
    cin >> start;
    cout << "Até: ";
    cin >> finish;
+   calcSum(start, finish);
 
-   cout << "\nA soma dos itens pares no intervalo é: " << calcSum(start, finish)
-        << endl;
+   cout << "\nA soma dos itens pares no intervalo é: " << res;
 
    return 0;
 }
@@ -23,6 +23,7 @@ int main() {
 // Subroutine function:
 int calcSum(int i, int end) {
    int sum = 0;
+   cout << "\nSendo os números:\n";
    while (i <= end) {
       if (i % 2 == 0) {
          sum += i;
@@ -30,5 +31,6 @@ int calcSum(int i, int end) {
       }
       i++;
    }
-   return sum;
+   res = sum;
+   // return sum;
 }
