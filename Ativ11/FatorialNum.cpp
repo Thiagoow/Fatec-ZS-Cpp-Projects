@@ -9,11 +9,18 @@ int FindFactorial(int item) {
    }
    return fact;
 }
-int logAntecessores(int item) {
+int logPredecessors(int item) {
    while (item > 1) {
       cout << item-- << ", ";
    }
    return 0;
+}
+int sumAllFactorials(int item) {
+   int sum = 0;
+   while (item > 1) {
+      sum += item--;
+   }
+   return sum;
 }
 
 //---------------
@@ -27,9 +34,10 @@ Repetir:
    cin >> num;
 
    cout << "O fatorial desse num é: " << FindFactorial(num);
-   cout << "\n\n" << logAntecessores(num) << endl << endl;
+   cout << "\n\n" << logPredecessors(num) << endl;
+   cout << "Sendo a soma de todos esses nums: " << sumAllFactorials(num);
 
-   cout << "Para não repetir o algoritmo, digite 'N', ou 'n': ";
+   cout << "\n\nPara não repetir o algoritmo, digite 'N', ou 'n': ";
    cin >> repeat;
    if (repeat == "N" || repeat == "n") {
       return 0;
