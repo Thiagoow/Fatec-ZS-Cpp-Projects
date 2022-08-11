@@ -19,6 +19,7 @@ void UserInfos::setData() {
    cin >> name;
    cout << "Digite seu CPF: ";
    cin >> cpf;
+   cout << "---------" << endl;
 }
 void UserInfos::showData() {
    cout << "CPF: " << cpf << endl;
