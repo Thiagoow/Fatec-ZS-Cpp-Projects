@@ -12,10 +12,9 @@ int main() {
    2- Vá na aba "Administrativo" e clique no botão Alterar localidade do
    sistema; 3- Ativar Beta: Use Unicode UTF-8 para suporte a idiomas em todo o
    mundo; 4- Reinicie o sistema. Se seguiu os passos acima, nn use a biblioteca,
-   pois a msm se encontra DEPRECATED❗
-   */
+   pois a msm se encontra DEPRECATED❗ */
 
-   char name[] = "Yo";
+   char name[] = "Thiago";
 
    printf("Olá mundo, meu nome é %s! :D\n", name);
 }
