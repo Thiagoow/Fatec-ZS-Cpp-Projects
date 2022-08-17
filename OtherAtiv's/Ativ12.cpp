@@ -28,8 +28,10 @@ void BillsClass::setData() {
 }
 double BillsClass::calcBill() {
    totalBill = initialBill;
+   double monthlyFees = fees * (delayDays / 30);
+
    if (delayDays >= 30) {
-      totalBill += (initialBill * fees) + (initialBill * interests);
+      totalBill += (initialBill * monthlyFees) + (initialBill * interests);
    } else if (delayDays != 0) {
       totalBill += (initialBill * fees);
    }
